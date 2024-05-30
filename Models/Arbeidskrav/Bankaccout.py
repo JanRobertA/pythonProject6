@@ -69,7 +69,6 @@ class BankAccount:
         return f"BankAccount(account_number={self.__account_number}, owner={self.__owner}, balance={self.__balance})"
 
 
-# Testkode
 account = BankAccount('1234567890', 'Alice', 10000)
 print(account.get_balance())
 account.deposit(10000)
@@ -77,7 +76,7 @@ print(account.get_balance())
 account.withdraw(152)
 print(account.get_balance())
 
-# Vis transaksjoner
+
 transactions = account.get_transactions()
 for transaction in transactions:
     print(transaction)
